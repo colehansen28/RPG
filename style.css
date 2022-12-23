@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(3, 3, 139);
+}
+.game-container{
+    
+    width: 80%;
+    max-width: 550px;
+    margin: auto;
+}
+
+.game{
+    background-color: gray;
+    padding: 1em;
+    margin: auto;
+
+}
+
+.stats{
+    display: flex;
+    gap: 1em;
+    border: 1px solid;
+    border-bottom: solid 2px;
+    padding: .5em;
+}
+
+.controls{
+    border: solid 1px;
+    padding: .5em;
+    display: flex;
+    gap: .5em;
+}
+
+.controls button{
+    border-radius: .25em;
+    border: 1px solid;
+}
+
+.monsterStats{
+    border: 1px solid;
+    display: grid;
+    gap: .5em;
+    padding: .5em;
+}
+
+.text{
+    padding: .5em;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidden{
+    display: none;
+}
+
+.modal{
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+@media(max-width: 400px){
+    .game-container{
+        width: 100%;
+    }
+    .controls{
+        display: grid;
+        
+    }
+    .controls button{
+        width: 90%;
+        margin: auto;
+    }
+}
